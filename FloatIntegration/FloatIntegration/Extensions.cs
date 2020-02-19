@@ -30,39 +30,3 @@ namespace FloatIntegration
         }
     }
 }
-
-
-// Grouped Tasks
-//var projects = tasksToAggregate
-//    .GroupBy(t => t.project_id)
-//    .Select(project => 
-//    {
-//        var peepsForProject = tasksToAggregate
-//            .Where(t => t.project_id == project.Key)
-//            .GroupBy(t => t.people_id)
-//            .Select(person => 
-//            {
-//                var tasksForPerson = tasksToAggregate
-//                    .Where(t => t.project_id == project.Key && t.people_id == person.Key)
-//                    .ToList();
-
-//                return new FloatPerson
-//                {
-//                    person_id = person.Key,
-//                    tasks = tasksForPerson
-//                };
-//            })
-//            .ToList();
-
-//        return new FloatProject
-//        { 
-//            project_id = project.Key, 
-//            people = peepsForProject
-//        };
-//    })
-//    .ToList();
-
-
-
-// Projects
-//IEnumerable<FloatProject> floatProjects = mytasks.Select(x => new FloatProject() { project_id = x.project_id }).DistinctBy(x => x.project_id);
